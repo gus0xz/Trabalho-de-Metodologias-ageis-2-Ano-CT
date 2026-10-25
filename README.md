@@ -49,4 +49,39 @@ As **Issues** funcionam como um painel de recados e tarefas do projeto[cite: 8].
 Quando vamos enviar uma alteração para o projeto principal, criamos um **Pull Request (PR)**. O PR é a etapa de feedback humano: os colegas de equipe analisam o código, fazem comentários, sugerem mudanças na lógica e só aprovam quando tudo estiver correto. Isso evita que códigos com erros entrem diretamente na versão principal.
 
 ### C. GitHub Actions (Feedback Automatizado — Integração Contínua)
-O **GitHub Actions** é a ferramenta que constrói o pipeline de feedback propriamente dito[cite: 8]. Sempre que alguém faz um commit ou abre um Pull Request, o GitHub Actions dispara
+O **GitHub Actions** é a ferramenta que constrói o pipeline de feedback propriamente dito[cite: 8]. Sempre que alguém faz um commit ou abre um Pull Request, o GitHub Actions dispara um *workflow* (esteira) automatizado que tenta executar o projeto e roda os testes criados pela equipe[cite: 7, 8]. 
+* Se os testes passarem, mostra um ícone verde de sucesso (badge)[cite: 7, 8].
+* Se algum teste falhar, avisa imediatamente na tela, impedindo que o código defeituoso avance[cite: 7, 12].
+
+---
+
+## Exemplo Prático: O Site de Horários da Turma
+
+Para ficar bem claro como isso funciona na nossa rotina escolar do 2º CT, imagine que o nosso grupo está desenvolvendo um **site de horários das aulas**:
+
+1. **Problema identificado (Issue):** Um colega avisa que a aula de quarta-feira está com o horário errado no site e abre uma **Issue** relatando o erro.
+2. **Correção e Proposta (Pull Request):** O aluno responsável corrige a informação no seu código local e envia a mudança abrindo um **Pull Request**.
+3. **Revisão da Equipe:** A dupla lê o código no PR, faz um comentário pedindo um ajuste de formatação e aprova.
+4. **Verificação Automática (GitHub Actions):** O GitHub Actions executa automaticamente a esteira de testes e confirma que o layout não quebrou.
+5. **Entrega e Novo Ciclo:** A alteração é aprovada e vai para o ar. Os colegas usam o site e, se notarem algo novo, abrem outra Issue, reiniciando o ciclo de melhoria contínua.
+
+---
+
+## Limites da Ferramenta e Considerações Finais
+
+Apesar de o GitHub ser essencial, é importante entender os seus limites:
+
+1. **Ferramenta não cria cultura sozinha:** Ter o GitHub configurado não significa ter Cultura DevOps. A cultura depende de comunicação, colaboração e compromisso da equipe.
+2. **Testes aprovados não garantem 100% de perfeição:** Os testes automáticos só validam o que foram programados para testar. Um teste verde significa que o código passou nas regras criadas, mas não garante a ausência total de bugs não previstos.
+3. **Necessidade de outras integrações:** Para monitorar o sistema rodando na nuvem em tempo real (como uso de memória ou erros de servidor), muitas vezes precisamos conectar o GitHub a ferramentas externas de monitoramento.
+
+---
+
+## Referências Consultadas
+
+* **DORA.** *Working in small batches*. Disponível em: <https://dora.dev/capabilities/working-in-small-batches/>. Acesso em: 2026.
+* **GITHUB DOCS.** *About issues*. Disponível em: <https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues>. Acesso em: 2026.
+* **GITHUB DOCS.** *Continuous integration with GitHub Actions*. Disponível em: <https://docs.github.com/en/actions/get-started/continuous-integration>. Acesso em: 2026.
+* **GITHUB DOCS.** *Reviewing proposed changes in a pull request*. Disponível em: <https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request>. Acesso em: 2026.
+* **MICROSOFT LEARN.** *Implement continuous feedback in DevOps*. Disponível em: <https://learn.microsoft.com/en-us/training/paths/az-400-implement-continuous-feedback/>. Acesso em: 2026.
+* **SEDUC-SP.** *Desenvolvimento de Sistemas — 2º Ano CT: Cultura DevOps e feedback contínuo* (Código da Aula: SISANO1C3B4S21A2). São Paulo, 2026[cite: 2].
