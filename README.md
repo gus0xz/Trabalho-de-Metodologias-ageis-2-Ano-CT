@@ -84,4 +84,4 @@ Apesar de o GitHub ser essencial, é importante entender os seus limites:
 * **GITHUB DOCS.** *Continuous integration with GitHub Actions*. Disponível em: <https://docs.github.com/en/actions/get-started/continuous-integration>. Acesso em: 2026.
 * **GITHUB DOCS.** *Reviewing proposed changes in a pull request*. Disponível em: <https://docs.github.com/en/pull-requests/how-tos/review-pull-requests/reviewing-proposed-changes-in-a-pull-request>. Acesso em: 2026.
 * **MICROSOFT LEARN.** *Implement continuous feedback in DevOps*. Disponível em: <https://learn.microsoft.com/en-us/training/paths/az-400-implement-continuous-feedback/>. Acesso em: 2026.
-* **SEDUC-SP.** *Desenvolvimento de Sistemas — 2º Ano CT: Cultura DevOps e feedback contínuo* (Código da Aula: SISANO1C3B4S21A2). São Paulo, 2026[cite: 2].
+* **SEDUC-SP.** *Desenvolvimento de Sistemas — 2º Ano CT: Cultura DevOps e feedback contínuo* (Código da Aula: SISANO1C3B4S21A2). São Paulo, 2026.
